@@ -142,15 +142,19 @@ body {
 	bottom: -45px;
 	left: 20px;
 	transition: 0.3s;
+	pointer-events: none;
+
 }
 .piano-key::after {
 	display: none;
 	content: attr(data-letter);
 }
+
 .piano-letter .piano-key::before,
 .piano-letter .piano-key::after {
 	content: attr(data-letter);
 }
+
 .piano-key:hover::before,
 .piano-key:hover::after {
 	color: #d7dfe6;

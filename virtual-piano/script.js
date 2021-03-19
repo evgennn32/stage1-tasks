@@ -1,4 +1,3 @@
-
 function playAudio(src) {
     const audio = new Audio();
     audio.src = src;
@@ -88,4 +87,3 @@ function removeTransition(ev) {
     console.log(ev)
     this.classList.remove('active')
 }
-
