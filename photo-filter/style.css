@@ -178,6 +178,9 @@ img {
     sepia(var(--sepia, 0%)) saturate(var(--saturate, 100%))
     hue-rotate(var(--hue, 0deg));
 }
+canvas {
+  display: none;
+}
 .fullscreen {
   position: fixed;
   top: 120px;
@@ -305,4 +308,11 @@ img {
   .btn-container > * {
     margin: 3px;
   }
+}
+
+canvas {
+  border:1px solid #000;
+  width: 500px;
+  height: 500px;
+
 }
