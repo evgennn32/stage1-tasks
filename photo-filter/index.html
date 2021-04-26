@@ -8,6 +8,7 @@
   <link href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap" rel="stylesheet" />
   <link href="style.css" rel="stylesheet" />
+  <script src="./script.js"></script>
   <title>photo-filter</title>
 </head>
 <body>
@@ -18,27 +19,27 @@
     <div class="filters">
       <label>
         Blur:
-        <input name="blur" data-sizing="px" type="range" min="0" max="10" value="0" />
+        <input name="blur" data-sizing="px" data-default="0" type="range" min="0" max="10" value="0" />
         <output name="result">0</output>
       </label>
       <label>
         Invert:
-        <input name="invert" data-sizing="%" type="range" min="0" max="100" value="0" />
+        <input name="invert" data-sizing="%" data-default="0" type="range" min="0" max="100" value="0" />
         <output name="result">0</output>
       </label>
       <label>
         Sepia:
-        <input name="sepia" data-sizing="%" type="range" min="0" max="100" value="0" />
+        <input name="sepia" data-sizing="%" data-default="0" type="range" min="0" max="100" value="0" />
         <output name="result">0</output>
       </label>
       <label>
         Saturate:
-        <input name="saturate" data-sizing="%" type="range" min="0" max="200" value="100" />
+        <input name="saturate" data-sizing="%" data-default="100" type="range" min="0" max="200" value="100" />
         <output name="result">100</output>
       </label>
       <label>
         Hue rotate:
-        <input name="hue" data-sizing="deg" type="range" min="0" max="360" value="0" />
+        <input name="hue" data-sizing="deg" data-default="0" type="range" min="0" max="360" value="0" />
         <output name="result">0</output>
       </label>
     </div>
@@ -53,6 +54,7 @@
         <button class="btn btn-save">Save picture</button>
       </div>
       <img src="assets/img/img.jpg" alt="image" />
+      <canvas></canvas>
     </div>
   </main>
   <footer class="footer">
@@ -64,6 +66,5 @@
     </div>
   </footer>
   <button class="fullscreen openfullscreen"></button>
-  <script src="script.js"></script>
 </body>
 </html>
