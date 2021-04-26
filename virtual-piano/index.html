@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/piano.ico" rel="shortcut icon">
+
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300;400;800&display=swap"
+    rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <title>virtual-piano</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header-title">Virtual Piano</h1>
+  </header>
+  <main class="main">
+    <div class="btn-container">
+      <button data-type="note" class="btn btn-notes btn-active">Notes</button>
+      <button data-type="letter" class="btn btn-letters">Letters</button>
+    </div>
+    <div class="piano">
+      <div class="piano-key" data-key="KeyD" data-letter="D" data-note="c"></div>
+      <div class="piano-key" data-key="KeyF" data-letter="F" data-note="d"></div>
+      <div class="piano-key" data-key="KeyG" data-letter="G" data-note="e"></div>
+      <div class="piano-key" data-key="KeyH" data-letter="H" data-note="f"></div>
+      <div class="piano-key" data-key="KeyJ" data-letter="J" data-note="g"></div>
+      <div class="piano-key" data-key="KeyK" data-letter="K" data-note="a"></div>
+      <div class="piano-key" data-key="KeyL" data-letter="L" data-note="b"></div>
+      <div class="keys-sharp">
+        <div class="piano-key sharp" data-key="KeyR" data-letter="R" data-note="c♯" data-note_sharp="c_sharp"></div>
+        <div class="piano-key sharp" data-key="KeyT" data-letter="T" data-note="d♯" data-note_sharp="d_sharp"></div>
+        <div class="piano-key sharp none"></div>
+        <div class="piano-key sharp" data-key="KeyU" data-letter="U" data-note="f♯" data-note_sharp="f_sharp"></div>
+        <div class="piano-key sharp" data-key="KeyI" data-letter="I" data-note="g♯" data-note_sharp="g_sharp"></div>
+        <div class="piano-key sharp" data-key="KeyO" data-letter="O" data-note="a♯" data-note_sharp="a_sharp"></div>
+
+      </div>
+    </div>
+    <button class="fullscreen openfullscreen"></button>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <a class="github" href="#" target="_blank" rel="noopener noreferrer">github</a>
+      <a class="rss" href="https://rs.school/js/" target="_blank" rel="noopener noreferrer">
+        <span class="rss-year">'21</span>
+      </a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
