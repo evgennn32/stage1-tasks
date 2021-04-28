@@ -107,13 +107,13 @@ document.addEventListener('DOMContentLoaded',()=>{
     const imagesSourceUrl = 'https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/';
     let currentImageUrl = './assets/img/img.jpg'
     const fileInput = document.querySelector('#btnInput').addEventListener('change',  setImage);
-    let currentImage = 1;
+    let currentImage = 0;
     let values = {};
     drawImage(currentImageUrl);
 
     document.querySelector('.openfullscreen').addEventListener('click',() => {
         if (!document.fullscreenElement) {
-            document.querySelector(".main").requestFullscreen();
+            document.querySelector("body").requestFullscreen();
         } else {
             if (document.exitFullscreen) {
                 document.exitFullscreen();
@@ -133,11 +133,5 @@ document.addEventListener('DOMContentLoaded',()=>{
         link.delete;
 
     });
-
-
-
-
-
-
 })
 
